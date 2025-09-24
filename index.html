@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Domptez votre timidité et osez être vous-même — E-book + Cahier d’exercices</title>
+  <meta name="description" content="Page de vente officielle de l’e-book Domptez votre timidité et osez être vous-même de Nicolas Courivaud. Méthodes concrètes, exercices guidés, garantie 14 jours." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+  <style>
+    :root{
+      --bleu:#2151A1;
+      --dore:#C9A227;
+      --fond:#F7F5EF;
+      --encre:#0A1B3F;
+    }
+    html,body{scroll-behavior:smooth;background:var(--fond);color:var(--encre)}
+    .gradient-title{
+      background: linear-gradient(100deg, #1e429f 0%, var(--bleu) 35%, #3a7bd5 60%, var(--dore) 100%);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      text-shadow: 0 0 12px rgba(33,81,161,0.08), 0 0 24px rgba(201,162,39,0.12);
+    }
+    .halo{
+      box-shadow:
+        0 10px 30px rgba(10,27,63,0.08),
+        0 0 0 8px rgba(33,81,161,0.06),
+        0 0 120px 0 rgba(201,162,39,0.08) inset;
+    }
+    .glass{
+      backdrop-filter: blur(10px);
+      background: linear-gradient(180deg, rgba(255,255,255,0.65), rgba(255,255,255,0.35));
+      border: 1px solid rgba(255,255,255,0.6);
+    }
+    .btn-primary{
+      background: linear-gradient(90deg, var(--bleu), #2b64c0);
+      color: #fff;
+      transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
+      box-shadow: 0 12px 24px rgba(33,81,161,0.25), 0 4px 10px rgba(33,81,161,0.2);
+    }
+    .btn-primary:hover{transform: translateY(-2px); filter: brightness(1.03)}
+    .btn-primary:active{transform: translateY(0); box-shadow: 0 8px 16px rgba(33,81,161,0.25)}
+    .btn-outline{
+      border: 1.5px solid var(--bleu); color: var(--bleu); background: #fff;
+      transition: all .2s ease;
+    }
+    .btn-outline:hover{background: rgba(33,81,161,0.06)}
+    .badge-dore{
+      background: linear-gradient(135deg, #f5e7bf, #e7cd7b, var(--dore));
+      color: #2b2200;
+      box-shadow: 0 8px 18px rgba(201,162,39,0.28), inset 0 1px 0 rgba(255,255,255,0.6);
+    }
+    .card{
+      background: #fff; border-radius: 20px; box-shadow: 0 15px 40px rgba(10,27,63,.06);
+      border: 1px solid rgba(10,27,63,.06);
+    }
+    .section{
+      position: relative;
+      padding-top: 72px; padding-bottom: 72px;
+    }
+    .divider{
+      height:1px; background: linear-gradient(90deg, rgba(33,81,161,0), rgba(33,81,161,.25), rgba(33,81,161,0));
+    }
+    .shine{
+      position:relative; overflow:hidden;
+    }
+    .shine::after{
+      content:""; position:absolute; top:-120%; left:-60%;
+      width:40%; height:300%;
+      transform: rotate(25deg);
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.35) 50%, rgba(255,255,255,0) 100%);
+      animation: shine 4.5s linear infinite;
+    }
+    @keyframes shine{
+      0%{left:-60%}
+      60%{left:120%}
+      100%{left:120%}
+    }
+
+    /* Animations scroll */
+    .reveal {opacity:0; transform: translateY(20px); transition: all .8s cubic-bezier(.2,.8,.2,1)}
+    .reveal.in {opacity:1; transform: translateY(0)}
+    .float-slow{animation: float 6s ease-in-out infinite}
+    .float-delay{animation: float 7.5s ease-in-out 0.6s infinite}
+    @keyframes float{
+      0%,100%{transform: translateY(0)}
+      50%{transform: translateY(-10px)}
+    }
+
+    /* Pricing pill */
+    .price-pill{
+      background: #0f2f70;
+      color:#fff;
+      border:1px solid rgba(255,255,255,.18);
+      box-shadow: 0 4px 18px rgba(10,27,63,.35);
+    }
+
+    /* FAQ */
+    .faq-item{transition: all .25s ease}
+    .faq-item[aria-expanded="true"]{
+      background: #ffffff;
+      box-shadow: 0 10px 28px rgba(10,27,63,.08);
+      border-color: rgba(33,81,161,.25);
+    }
+
+    /* Responsive tweaks */
+    @media (min-width:1024px){
+      .hero-grid{grid-template-columns: 1.15fr .85fr}
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-[#2151A1]/10 selection:text-[#2151A1]">
+
+  <header class="sticky top-0 z-40">
+    <div class="relative">
+      <div class="absolute inset-0 bg-gradient-to-r from-[#2151A1]/85 via-[#2151A1]/70 to-[#C9A227]/70 blur-2xl opacity-30 -z-10"></div>
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2151A1] to-[#2d66c4] flex items-center justify-center text-white shadow-md halo">
+            <i class="fa fa-feather"></i>
+          </div>
+          <div class="leading-tight">
+            <p class="font-extrabold text-[#0A1B3F] tracking-tight">Domptez votre timidité</p>
+            <p class="text-sm text-[#2151A1]">par Nicolas Courivaud</p>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-6">
+          <a href="#benefices" class="text-sm font-medium text-[#0A1B3F] hover:text-[#2151A1]">Ce que vous obtenez</a>
+          <a href="#comparatif" class="text-sm font-medium text-[#0A1B3F] hover:text-[#2151A1]">Comparatif</a>
+          <a href="#preuves" class="text-sm font-medium text-[#0A1B3F] hover:text-[#2151A1]">Témoignages</a>
+          <a href="#faq" class="text-sm font-medium text-[#0A1B3F] hover:text-[#2151A1]">FAQ</a>
+          <a href="#cta-final" class="px-5 py-2 rounded-full btn-primary text-sm font-semibold shine">
+            Obtenir l’e-book
+          </a>
+        </div>
+        <button id="menuBtn" aria-label="Menu" class="md:hidden w-10 h-10 rounded-lg btn-outline flex items-center justify-center">
+          <i class="fa fa-bars"></i>
+        </button>
+      </nav>
+      <div id="mobileMenu" class="md:hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-4 hidden">
+        <div class="card p-4 space-y-2">
+          <a href="#benefices" class="block px-3 py-2 rounded-lg hover:bg-[#2151A1]/5">Ce que vous obtenez</a>
+          <a href="#comparatif" class="block px-3 py-2 rounded-lg hover:bg-[#2151A1]/5">Comparatif</a>
+          <a href="#preuves" class="block px-3 py-2 rounded-lg hover:bg-[#2151A1]/5">Témoignages</a>
+          <a href="#faq" class="block px-3 py-2 rounded-lg hover:bg-[#2151A1]/5">FAQ</a>
+          <a href="#cta-final" class="block text-center px-4 py-3 rounded-xl btn-primary font-semibold">Obtenir l’e-book</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section relative">
+      <div class="absolute inset-0 -z-10">
+        <div class="absolute -top-24 -left-10 w-80 h-80 bg-[#2151A1]/15 rounded-full blur-3xl"></div>
+        <div class="absolute top-32 -right-16 w-96 h-96 bg-[#C9A227]/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[90%] h-32 bg-gradient-to-t from-black/5 to-transparent rounded-t-full blur-2xl opacity-25"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid hero-grid gap-10 items-center">
+          <div class="reveal in">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full price-pill mb-5">
+              <i class="fa fa-bolt text-yellow-300"></i>
+              <span class="text-xs sm:text-sm">Offre de lancement</span>
+              <span class="ml-2 px-2 py-0.5 rounded-full bg-white/15 text-xs">-35%</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold gradient-title tracking-tight leading-[1.05]">
+              Domptez votre timidité et osez être vous-même
+            </h1>
+            <p class="mt-5 text-lg sm:text-xl text-[#0A1B3F]/80 max-w-2xl">
+              Méthodes concrètes, exercices guidés et stratégies éprouvées pour transformer la timidité en force. Une feuille de route claire et humaine, écrite par un ancien timide devenu facilitateur en changement intérieur.
+            </p>
+
+            <div class="mt-6 flex flex-wrap items-center gap-4">
+              <div class="flex items-center gap-3 card px-4 py-3">
+                <div class="w-10 h-10 rounded-lg bg-[#2151A1]/10 text-[#2151A1] flex items-center justify-center">
+                  <i class="fa fa-book-open"></i>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold">E-book + Cahier d’exercices</p>
+                  <p class="text-xs text-[#0A1B3F]/70">Format PDF • Accès immédiat</p>
+                </div>
+              </div>
+              <div class="flex items-end gap-3">
+                <div class="text-3xl sm:text-4xl font-extrabold text-[#2151A1]">12,90 €</div>
+                <div class="text-[#0A1B3F]/60 line-through">19,90 €</div>
+                <span class="badge-dore text-xs font-semibold px-2 py-1 rounded-md">Économie 7 €</span>
+              </div>
+            </div>
+
+            <div class="mt-7 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+              <a href="#cta-final" class="px-6 py-4 rounded-2xl btn-primary text-center text-base sm:text-lg font-semibold shine">
+                Obtenir l’e-book + cahier d’exercices
+                <i class="fa fa-arrow-right ml-2"></i>
+              </a>
+              <button class="px-5 py-4 rounded-2xl btn-outline font-semibold">
+                Voir un extrait gratuit
+              </button>
+            </div>
+
+            <div class="mt-5 flex flex-wrap items-center gap-4 text-sm text-[#0A1B3F]/70">
+              <span class="flex items-center gap-2"><i class="fa fa-shield-alt text-[#2151A1]"></i> Paiement sécurisé</span>
+              <span class="flex items-center gap-2"><i class="fa fa-clock text-[#2151A1]"></i> Téléchargement immédiat</span>
+              <span class="flex items-center gap-2"><i class="fa fa-undo text-[#2151A1]"></i> Satisfait ou remboursé 14 jours</span>
+            </div>
+          </div>
+
+          <div class="relative reveal in">
+            <div class="absolute -inset-6 rounded-3xl bg-gradient-to-br from-[#2151A1]/15 via-transparent to-[#C9A227]/15 blur-xl"></div>
+            <div class="relative card p-4 lg:p-6 halo">
+              <div class="grid grid-cols-3 gap-2">
+                <img src="https://placehold.co/460x640/2151A1/ffffff?text=Couverture+E-book" alt="Couverture e-book" class="col-span-2 rounded-2xl object-cover w-full h-full float-slow" />
+                <div class="flex flex-col gap-2">
+                  <img src="https://placehold.co/300x200/ffffff/0A1B3F?text=Sommaire" alt="Sommaire" class="rounded-xl object-cover w-full h-full float-delay" />
+                  <img src="https://placehold.co/300x420/f7f5ef/0A1B3F?text=Cahier+d'exercices" alt="Cahier d’exercices" class="rounded-xl object-cover w-full h-full" />
+                </div>
+              </div>
+              <div class="mt-4 flex items-center justify-between">
+                <div class="flex items-center gap-2 text-[#0A1B3F]/70 text-sm">
+                  <i class="fa fa-file-pdf text-[#C9A227]"></i> 168 pages • PDF interactif
+                </div>
+                <div class="text-xs text-[#0A1B3F]/60">Mises à jour incluses</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider max-w-6xl mx-auto"></div>
+
+    <section id="benefices" class="section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto reveal">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2151A1]/10 text-[#2151A1] text-xs font-semibold">
+            <i class="fa fa-star"></i> Ce que vous allez obtenir
+          </span>
+          <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-[#0A1B3F]">Un parcours clair, bienveillant et actionnable</h2>
+          <p class="mt-3 text-[#0A1B3F]/75">
+            Trois piliers pour passer de la timidité subie à l’affirmation tranquille. Chaque chapitre propose des actions simples à mettre en pratique, dès aujourd’hui.
+          </p>
+        </div>
+
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card p-6 reveal">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-[#2151A1]/10 text-[#2151A1] flex items-center justify-center font-extrabold">1</div>
+              <div>
+                <h3 class="font-bold text-lg">Comprendre vos mécanismes</h3>
+                <p class="mt-1 text-sm text-[#0A1B3F]/75">Identifiez les déclencheurs, croyances et schémas qui alimentent la timidité, sans jugement.</p>
+                <ul class="mt-3 space-y-2 text-sm text-[#0A1B3F]/80">
+                  <li class="flex gap-2"><i class="fa fa-check text-[#C9A227] mt-1"></i> Cartographie de vos situations sensibles</li>
+                  <li class="flex gap-2"><i class="fa fa-check text-[#C9A227] mt-1"></i> Réécriture de croyances limitantes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card p-6 reveal">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-[#2151A1]/10 text-[#2151A1] flex items-center justify-center font-extrabold">2</div>
+              <div>
+                <h3 class="font-bold text-lg">Déployer des actions progressives</h3>
+                <p class="mt-1 text-sm text-[#0A1B3F]/75">Petits défis sécurisés pour gagner de l’assurance sans vous brusquer.</p>
+                <ul class="mt-3 space-y-2 text-sm text-[#0A1B3F]/80">
+                  <li class="flex gap-2"><i class="fa fa-check text-[#C9A227] mt-1"></i> Défis en 5 minutes par jour</li>
+                  <li class="flex gap-2"><i class="fa fa-check text-[#C9A227] mt-1"></i> Rituels anti-ruminations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card p-6 reveal">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-[#2151A1]/10 text-[#2151A1] flex items-center justify-center font-extrabold">3</div>
+              <div>
+                <h3 class="font-bold text-lg">Affirmer votre voix authentique</h3>
+                <p class="mt-1 text-sm text-[#0A1B3F]/75">Techniques de communication douce, posture, ancrage et gestion du regard.</p>
+                <ul class="mt-3 space-y-2 text-sm text-[#0A1B3F]/80">
+                  <li class="flex gap-2"><i class="fa fa-check text-[#C9A227] mt-1"></i> Scripts anti-trou noir</li>
+                  <li class="flex gap-2"><i class="fa fa-check text-[#C9A227] mt-1"></i> Outils d’ancrage express</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 grid lg:grid-cols-3 gap-8 items-stretch">
+          <div class="lg:col-span-2 card p-6 lg:p-8 reveal">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl badge-dore flex items-center justify-center">
+                <i class="fa fa-clipboard-check"></i>
+              </div>
+              <h3 class="text-2xl font-extrabold">Le cœur du livre : le cahier d’exercices</h3>
+            </div>
+            <p class="mt-3 text-[#0A1B3F]/80">Un accompagnement guidé pas à pas, pour ancrer durablement vos progrès.</p>
+            <div class="mt-5 grid sm:grid-cols-2 gap-4">
+              <div class="p-4 rounded-xl bg-[#F7F5EF] border border-[#2151A1]/10">
+                <p class="font-semibold"><i class="fa fa-pen text-[#C9A227] mr-2"></i> Exercices d’auto-observation</p>
+                <p class="text-sm text-[#0A1B3F]/70 mt-1">Journal de bord, échelle de confort social, bilan hebdomadaire.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-[#F7F5EF] border border-[#2151A1]/10">
+                <p class="font-semibold"><i class="fa fa-route text-[#C9A227] mr-2"></i> Protocoles anti-évitemment</p>
+                <p class="text-sm text-[#0A1B3F]/70 mt-1">Micro-expositions graduées, liste de mini-actions validées.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-[#F7F5EF] border border-[#2151A1]/10">
+                <p class="font-semibold"><i class="fa fa-heart text-[#C9A227] mr-2"></i> Auto-compassion</p>
+                <p class="text-sm text-[#0A1B3F]/70 mt-1">Dialogues internes, ré-assurance et recadrage bienveillant.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-[#F7F5EF] border border-[#2151A1]/10">
+                <p class="font-semibold"><i class="fa fa-comments text-[#C9A227] mr-2"></i> Scripts de prise de parole</p>
+                <p class="text-sm text-[#0A1B3F]/70 mt-1">Brise-glaces, phrases d’amorce, réponses aux objections.</p>
+              </div>
+            </div>
+            <div class="mt-6">
+              <a href="#cta-final" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl btn-primary">
+                Je veux le cahier d’exercices inclus <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="card p-6 reveal glass">
+            <h4 class="font-bold text-lg flex items-center gap-2"><i class="fa fa-gift text-[#2151A1]"></i> Bonus exclusifs</h4>
+            <ul class="mt-3 space-y-3 text-sm">
+              <li class="flex gap-3"><i class="fa fa-headphones text-[#C9A227] mt-1"></i> 3 audios d’ancrage (3x6 min) pour calmer le trac</li>
+              <li class="flex gap-3"><i class="fa fa-calendar-check text-[#C9A227] mt-1"></i> Plan 21 jours d’expériences sociales</li>
+              <li class="flex gap-3"><i class="fa fa-sync text-[#C9A227] mt-1"></i> Mises à jour futures incluses</li>
+            </ul>
+            <div class="mt-6 p-4 rounded-xl bg-gradient-to-br from-[#2151A1]/10 to-[#C9A227]/10">
+              <p class="text-sm"><span class="font-semibold text-[#2151A1]">Aujourd’hui</span> 12,90 € <span class="line-through text-[#0A1B3F]/50 ml-2">19,90 €</span></p>
+              <p class="text-xs text-[#0A1B3F]/70">Offre limitée, remise appliquée automatiquement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparatif" class="section relative">
+      <div class="absolute inset-0 -z-10">
+        <div class="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-[#2151A1]/8 to-transparent"></div>
+      </div>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center reveal">
+          <h2 class="text-3xl font-extrabold text-[#0A1B3F]">Petit book vs Version complète</h2>
+          <p class="mt-2 text-[#0A1B3F]/75">Choisissez la voie la plus rapide vers des changements concrets.</p>
+        </div>
+
+        <div class="mt-8 overflow-hidden rounded-2xl border border-[#2151A1]/15 card">
+          <div class="grid grid-cols-12 text-sm">
+            <div class="col-span-12 md:col-span-4 p-4 font-semibold bg-[#F7F5EF]">Éléments</div>
+            <div class="col-span-6 md:col-span-4 p-4 font-bold text-center">Petit book</div>
+            <div class="col-span-6 md:col-span-4 p-4 font-bold text-center text-[#2151A1]">Version complète</div>
+
+            <div class="col-span-12 md:col-span-4 p-4 border-t">Contenu principal (théorie)</div>
+            <div class="col-span-6 md:col-span-4 p-4 border-t text-center">Résumé condensé</div>
+            <div class="col-span-6 md:col-span-4 p-4 border-t text-center text-[#2151A1] font-semibold">Chapitres complets + cas pratiques</div>
+
+            <div class="col-span-12 md:col-span-4 p-4 border-t">Exemples concrets</div>
+            <div class="col-span-6 md:col-span-4 p-4 border-t text-center">Quelques exemples</div>
+            <div class="col-span-6 md:col-span-4 p-4 border-t text-center text-[#2151A1] font-semibold">Nombreux scénarios guidés</div>
+
+            <div class="col-span-12 md:col-span-4 p-4 border-t">Cahier d’exercices</div>
+            <div class="col-span-6 md:col-span-4 p-4 border-t text-center">
+              <span class="inline-flex items-center gap-2 px-2 py-1 rounded-md bg-red-50 text-red-700"><i class="fa fa-times"></i> Non inclus</span>
+            </div>
+            <div class="col-span-6 md:col-span-4 p-4 border-t text-center">
+              <span class="inline-flex items-center gap-2 px-2 py-1 rounded-md bg-green-50 text-green-700"><i class="fa fa-check"></i> Inclus</span>
+            </div>
+
+            <div class="col-span-12 md:col-span-4 p-4 border-t">Bonus audio</div>
+            <div class="col-span-6 md:col-span-4 p-4 border-t text-center">—</div>
+            <div class="col-span-6 md:col-span-4 p-4 border-t text-center text-[#2151A1] font-semibold">3 audios d’ancrage</div>
+
+            <div class="col-span-12 md:col-span-4 p-4 border-t">Prix</div>
+            <div class="col-span-6 md:col-span-4 p-4 border-t text-center">9,90 €</div>
+            <div class="col-span-6 md:col-span-4 p-4 border-t text-center">
+              <span class="text-[#2151A1] font-extrabold">12,90 €</span> <span class="line-through text-[#0A1B3F]/50">19,90 €</span>
+            </div>
+          </div>
+          <div class="p-4 bg-gradient-to-r from-[#C9A227]/15 to-transparent text-center text-sm font-semibold">
+            Cahier d’exercices : inclus uniquement dans la version complète
+          </div>
+        </div>
+
+        <div class="mt-6 text-center reveal">
+          <a href="#cta-final" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl btn-primary">
+            Choisir la version complète <i class="fa fa-check-circle"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="preuves" class="section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-3 gap-10">
+          <div class="lg:col-span-2">
+            <h2 class="text-3xl font-extrabold text-[#0A1B3F] reveal">Témoignages d’anciens timides</h2>
+            <p class="mt-2 text-[#0A1B3F]/75 reveal">Ils ont appliqué la méthode et ont observé des résultats concrets en quelques semaines.</p>
+
+            <div class="mt-6 grid md:grid-cols-2 gap-6">
+              <div class="card p-6 reveal">
+                <div class="flex items-center gap-3">
+                  <img src="https://placehold.co/64x64" alt="Photo Léa" class="w-12 h-12 rounded-full object-cover">
+                  <div>
+                    <p class="font-semibold">Léa, 27 ans</p>
+                    <div class="text-[#C9A227]"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i></div>
+                  </div>
+                </div>
+                <p class="mt-3 text-[#0A1B3F]/80">Les défis progressifs m’ont permis d’oser prendre la parole en réunion. Je me sens enfin légitime et calme.</p>
+              </div>
+
+              <div class="card p-6 reveal">
+                <div class="flex items-center gap-3">
+                  <img src="https://placehold.co/64x64" alt="Photo Samir" class="w-12 h-12 rounded-full object-cover">
+                  <div>
+                    <p class="font-semibold">Samir, 34 ans</p>
+                    <div class="text-[#C9A227]"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i></div>
+                  </div>
+                </div>
+                <p class="mt-3 text-[#0A1B3F]/80">Le cahier d’exercices est ultra concret. En 21 jours, mon anxiété sociale a clairement diminué.</p>
+              </div>
+
+              <div class="card p-6 reveal">
+                <div class="flex items-center gap-3">
+                  <img src="https://placehold.co/64x64" alt="Photo Camille" class="w-12 h-12 rounded-full object-cover">
+                  <div>
+                    <p class="font-semibold">Camille, 22 ans</p>
+                    <div class="text-[#C9A227]"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+                <p class="mt-3 text-[#0A1B3F]/80">J’adore les scripts de brise-glace. C’est devenu beaucoup plus simple d’engager une conversation.</p>
+              </div>
+
+              <div class="card p-6 reveal">
+                <div class="flex items-center gap-3">
+                  <img src="https://placehold.co/64x64" alt="Photo Hugo" class="w-12 h-12 rounded-full object-cover">
+                  <div>
+                    <p class="font-semibold">Hugo, 41 ans</p>
+                    <div class="text-[#C9A227]"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i></div>
+                  </div>
+                </div>
+                <p class="mt-3 text-[#0A1B3F]/80">L’approche est bienveillante, sans pression. J’avance pas à pas, et ça marche.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="lg:col-span-1">
+            <div class="card p-6 sticky top-24 reveal">
+              <div class="flex items-center gap-3">
+                <img src="https://placehold.co/88x88" alt="Nicolas Courivaud" class="w-16 h-16 rounded-xl object-cover">
+                <div>
+                  <p class="font-extrabold">Nicolas Courivaud</p>
+                  <p class="text-sm text-[#0A1B3F]/70">Facilitateur en changement intérieur</p>
+                </div>
+              </div>
+              <p class="mt-3 text-sm text-[#0A1B3F]/80">
+                Ancien grand timide, j’ai passé 10 ans à explorer les outils qui transforment vraiment: exposition graduée, cognition, ancrage somatique et self-compassion. Ce livre est la synthèse actionnable de ce qui a marché pour moi et mes clients.
+              </p>
+              <ul class="mt-4 space-y-2 text-sm">
+                <li class="flex gap-2"><i class="fa fa-check text-[#C9A227] mt-1"></i> Approche douce et pragmatique</li>
+                <li class="flex gap-2"><i class="fa fa-check text-[#C9A227] mt-1"></i> Exercices pas à pas</li>
+                <li class="flex gap-2"><i class="fa fa-check text-[#C9A227] mt-1"></i> Sans jargon inutile</li>
+              </ul>
+              <div class="mt-5 p-4 rounded-xl bg-gradient-to-br from-[#2151A1]/10 to-[#C9A227]/10">
+                <p class="text-sm"><i class="fa fa-quote-left text-[#C9A227] mr-2"></i> Vous êtes déjà assez. Mon rôle: vous aider à l’incarner quand ça compte.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div class="card p-6 md:p-8 reveal">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl badge-dore flex items-center justify-center">
+                <i class="fa fa-shield-alt"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-extrabold">Satisfait ou remboursé 14 jours</h3>
+                <p class="text-[#0A1B3F]/70 text-sm">Achat 100% sécurisé</p>
+              </div>
+            </div>
+            <p class="mt-4 text-[#0A1B3F]/80">Lisez, essayez les exercices, et si vous n’êtes pas convaincu, écrivez-nous sous 14 jours: remboursement intégral, sans questions lourdes.</p>
+            <div class="mt-4 flex items-center gap-4 text-sm text-[#0A1B3F]/70">
+              <span class="flex items-center gap-2"><i class="fa fa-lock text-[#2151A1]"></i> Stripe/CB sécurisés</span>
+              <span class="flex items-center gap-2"><i class="fa fa-thumbs-up text-[#2151A1]"></i> Zéro risque</span>
+            </div>
+          </div>
+
+          <div id="faq" class="reveal">
+            <h3 class="text-2xl font-extrabold text-[#0A1B3F]">FAQ</h3>
+            <div class="mt-4 space-y-3">
+              <div class="faq-item card p-4 border border-[#2151A1]/15" data-acc>
+                <button class="w-full flex items-center justify-between text-left font-semibold">
+                  L’e-book convient-il aux grands débutants ?
+                  <i class="fa fa-chevron-down text-[#2151A1]"></i>
+                </button>
+                <div class="mt-2 hidden text-sm text-[#0A1B3F]/80">
+                  Oui. Le parcours est progressif, illustré d’exemples concrets et d’exercices gradués. Aucun prérequis.
+                </div>
+              </div>
+              <div class="faq-item card p-4 border border-[#2151A1]/15" data-acc>
+                <button class="w-full flex items-center justify-between text-left font-semibold">
+                  Sous quel format est livré le cahier d’exercices ?
+                  <i class="fa fa-chevron-down text-[#2151A1]"></i>
+                </button>
+                <div class="mt-2 hidden text-sm text-[#0A1B3F]/80">
+                  PDF interactif imprimable, avec zones à remplir. Compatible ordinateur, tablette et mobile.
+                </div>
+              </div>
+              <div class="faq-item card p-4 border border-[#2151A1]/15" data-acc>
+                <button class="w-full flex items-center justify-between text-left font-semibold">
+                  Combien de temps pour voir des résultats ?
+                  <i class="fa fa-chevron-down text-[#2151A1]"></i>
+                </button>
+                <div class="mt-2 hidden text-sm text-[#0A1B3F]/80">
+                  La majorité observe des changements en 2 à 4 semaines grâce aux micro-expositions et rituels quotidiens.
+                </div>
+              </div>
+              <div class="faq-item card p-4 border border-[#2151A1]/15" data-acc>
+                <button class="w-full flex items-center justify-between text-left font-semibold">
+                  Puis-je payer en toute sécurité ?
+                  <i class="fa fa-chevron-down text-[#2151A1]"></i>
+                </button>
+                <div class="mt-2 hidden text-sm text-[#0A1B3F]/80">
+                  Oui, le paiement est traité par des solutions sécurisées (SSL, 3D Secure selon banque).
+                </div>
+              </div>
+              <div class="faq-item card p-4 border border-[#2151A1]/15" data-acc>
+                <button class="w-full flex items-center justify-between text-left font-semibold">
+                  Et si l’e-book ne me convient pas ?
+                  <i class="fa fa-chevron-down text-[#2151A1]"></i>
+                </button>
+                <div class="mt-2 hidden text-sm text-[#0A1B3F]/80">
+                  Vous avez 14 jours pour demander un remboursement intégral. Un simple e-mail suffit.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta-final" class="section relative">
+      <div class="absolute inset-0 -z-10">
+        <div class="absolute inset-x-0 top-0 h-full bg-gradient-to-b from-[#2151A1]/15 via-transparent to-[#C9A227]/10"></div>
+      </div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="card overflow-hidden relative">
+          <div class="absolute right-0 top-0 w-72 h-72 bg-gradient-to-bl from-[#C9A227]/30 to-transparent blur-2xl -z-10"></div>
+          <div class="grid md:grid-cols-3">
+            <div class="md:col-span-2 p-8">
+              <div class="flex items-center gap-3">
+                <span class="px-3 py-1 rounded-full bg-[#2151A1]/10 text-[#2151A1] text-xs font-semibold">Offre limitée</span>
+                <span class="px-3 py-1 rounded-full badge-dore text-xs font-semibold">-35%</span>
+              </div>
+              <h3 class="mt-3 text-2xl sm:text-3xl font-extrabold">Oui, je veux l’e-book complet maintenant</h3>
+              <p class="mt-2 text-[#0A1B3F]/75">E-book + Cahier d’exercices + Bonus audio • Accès immédiat • Mises à jour incluses</p>
+
+              <div class="mt-5 flex items-end gap-4">
+                <div class="text-4xl font-extrabold text-[#2151A1]">12,90 €</div>
+                <div class="text-[#0A1B3F]/60 line-through">19,90 €</div>
+                <div class="text-xs text-[#0A1B3F]/60">TVA incluse si applicable</div>
+              </div>
+
+              <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#" class="px-6 py-4 rounded-2xl btn-primary text-lg font-semibold shine">
+                  Procéder au paiement sécurisé <i class="fa fa-lock ml-2"></i>
+                </a>
+                <button class="px-5 py-4 rounded-2xl btn-outline font-semibold">
+                  Ajouter au panier
+                </button>
+              </div>
+
+              <div class="mt-4 text-xs text-[#0A1B3F]/70 flex items-center gap-3">
+                <span class="flex items-center gap-2"><i class="fa fa-download text-[#2151A1]"></i> Téléchargement instantané</span>
+                <span class="flex items-center gap-2"><i class="fa fa-undo text-[#2151A1]"></i> 14 jours satisfait ou remboursé</span>
+                <span class="flex items-center gap-2"><i class="fa fa-shield-alt text-[#2151A1]"></i> SSL / 3D Secure</span>
+              </div>
+            </div>
+
+            <div class="p-8 bg-[#F7F5EF] border-l border-[#2151A1]/10">
+              <div class="flex items-center gap-3">
+                <i class="fa fa-list-check text-[#2151A1] text-2xl"></i>
+                <p class="font-bold">Vous recevez</p>
+              </div>
+              <ul class="mt-3 space-y-2 text-sm">
+                <li class="flex gap-2"><i class="fa fa-check text-[#C9A227] mt-1"></i> E-book 168 pages (PDF)</li>
+                <li class="flex gap-2"><i class="fa fa-check text-[#C9A227] mt-1"></i> Cahier d’exercices interactif</li>
+                <li class="flex gap-2"><i class="fa fa-check text-[#C9A227] mt-1"></i> 3 audios d’ancrage</li>
+                <li class="flex gap-2"><i class="fa fa-check text-[#C9A227] mt-1"></i> Mises à jour gratuites</li>
+                <li class="flex gap-2"><i class="fa fa-check text-[#C9A227] mt-1"></i> Support e-mail prioritaire</li>
+              </ul>
+              <div class="mt-6 p-4 rounded-xl bg-white border border-[#2151A1]/10">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-semibold">Code promo</span>
+                  <span class="text-xs text-[#0A1B3F]/60">Appliqué: LANCEMENT</span>
+                </div>
+                <div class="mt-2 flex items-center gap-3">
+                  <div class="flex-1 px-3 py-2 rounded-lg bg-[#F7F5EF] border border-[#2151A1]/15 text-sm">12,90 €</div>
+                  <button class="px-4 py-2 rounded-lg btn-outline text-sm">Modifier</button>
+                </div>
+              </div>
+              <div class="mt-6 flex items-center gap-3 text-sm text-[#0A1B3F]/70">
+                <i class="fa fa-shield-alt text-[#2151A1]"></i> Paiement chiffré, sans stockage des CB
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pt-10 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center gap-2">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2151A1] to-[#2d66c4] text-white flex items-center justify-center"><i class="fa fa-feather"></i></div>
+            <p class="font-extrabold">Domptez votre timidité</p>
+          </div>
+          <p class="mt-3 text-sm text-[#0A1B3F]/70">Un guide bienveillant et efficace pour libérer votre voix intérieure.</p>
+        </div>
+        <div>
+          <p class="font-semibold mb-2">Raccourcis</p>
+          <ul class="space-y-1 text-sm">
+            <li><a class="hover:text-[#2151A1]" href="#benefices">Bénéfices</a></li>
+            <li><a class="hover:text-[#2151A1]" href="#comparatif">Comparatif</a></li>
+            <li><a class="hover:text-[#2151A1]" href="#preuves">Témoignages</a></li>
+            <li><a class="hover:text-[#2151A1]" href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold mb-2">L’auteur</p>
+          <ul class="space-y-1 text-sm">
+            <li>Nicolas Courivaud</li>
+            <li>Facilitateur en changement intérieur</li>
+            <li><a class="hover:text-[#2151A1]" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold mb-2">Légal</p>
+          <ul class="space-y-1 text-sm">
+            <li><a href="#" class="hover:text-[#2151A1]">Mentions légales</a></li>
+            <li><a href="#" class="hover:text-[#2151A1]">CGV</a></li>
+            <li><a href="#" class="hover:text-[#2151A1]">Confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 divider"></div>
+      <div class="mt-4 text-xs text-[#0A1B3F]/60 flex flex-wrap items-center justify-between gap-3">
+        <p>© 2025 — Domptez votre timidité. Tous droits réservés.</p>
+        <div class="flex items-center gap-3">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="Retour en haut" class="fixed bottom-5 right-5 z-50 opacity-0 pointer-events-none transition-all">
+    <span class="px-4 py-3 rounded-full btn-primary shadow-xl"><i class="fa fa-arrow-up"></i></span>
+  </button>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn && menuBtn.addEventListener('click', ()=>{
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Reveal on scroll
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      })
+    },{threshold:.18});
+    revealEls.forEach(el=>io.observe(el));
+
+    // FAQ accordion
+    document.querySelectorAll('[data-acc]').forEach(item=>{
+      const btn = item.querySelector('button');
+      const body = item.querySelector('div.mt-2');
+      btn.addEventListener('click', ()=>{
+        const open = body.classList.contains('hidden') ? false : true;
+        document.querySelectorAll('[data-acc]').forEach(other=>{
+          if(other!==item){
+            other.setAttribute('aria-expanded','false');
+            const b = other.querySelector('div.mt-2');
+            b.classList.add('hidden');
+          }
+        });
+        if(open){
+          body.classList.add('hidden');
+          item.setAttribute('aria-expanded','false');
+        }else{
+          body.classList.remove('hidden');
+          item.setAttribute('aria-expanded','true');
+        }
+      });
+    });
+
+    // Back to top
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', ()=>{
+      if(window.scrollY>300){
+        toTop.classList.remove('opacity-0','pointer-events-none');
+      }else{
+        toTop.classList.add('opacity-0','pointer-events-none');
+      }
+    });
+    toTop.addEventListener('click', ()=>window.scrollTo({top:0, behavior:'smooth'}));
+
+    // Smooth anchor offset for sticky header
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const id = a.getAttribute('href');
+        if(id.length>1){
+          const el = document.querySelector(id);
+          if(el){
+            e.preventDefault();
+            const top = el.getBoundingClientRect().top + window.scrollY - 70;
+            window.scrollTo({top, behavior:'smooth'});
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
